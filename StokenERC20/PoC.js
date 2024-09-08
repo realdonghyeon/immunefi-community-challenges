@@ -36,7 +36,7 @@ async function main () {
         attacker
     );
 
-    //await IERC20_deployer.transfer(user1.address, test_eth); // transfer loglc 에 의해 constructor 가 지정한 totalsupply 를 넘을 수 없음
+    //await IERC20_deployer.transfer(user1.address, test_eth); 
     //user1 have 100 eth token before
     console.log("user1 token balance :", ethers.formatEther(await token_pool_user1.balanceOf(user1.address)));
     //attacker holding 0 eth token before
