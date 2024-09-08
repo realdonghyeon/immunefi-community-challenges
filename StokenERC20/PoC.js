@@ -6,11 +6,11 @@ async function main () {
     const [deployer, user1, attacker] = await ethers.getSigners();
     //const test_eth = ethers.parseEther("100");
     const test_eth = ethers.parseEther("4550");
-    const IERC20_deployer = await ethers.getContractAt(
+    /*const IERC20_deployer = await ethers.getContractAt(
         "StokenERC20",
         ERC20_pool,
         deployer
-    ); 
+    ); */
 
     //const deployer_sign = await ethers.getSigner(deployer.address);
     const bank_user1 = await ethers.getContractAt(
