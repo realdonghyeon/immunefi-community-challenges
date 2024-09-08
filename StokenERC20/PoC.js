@@ -4,6 +4,7 @@ const ERC20_pool = "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707"; // instance of 
 const Exchange = "0x0165878A594ca255338adfa4d48449f69242Eb8F"; // instance of Exchange contract
 async function main () {
     const [deployer, user1, attacker] = await ethers.getSigners();
+    //const test_eth = ethers.parseEther("100");
     const test_eth = ethers.parseEther("4550");
     const IERC20_deployer = await ethers.getContractAt(
         "StokenERC20",
